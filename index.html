@@ -17,48 +17,34 @@
     <div class="flex-center flex-column">
       <h1 class="animated bounce infinite">PIG DICE</h1>
       <br>
-      <button id="chike" class="btn btn-indigo btn-rounded btn-md">Click To View Rules</button>
+      <button id="chike" class="btn btn-indigo btn-rounded btn-md">Click to see Instrucions</button>
       <div id="inst" class="card">
         <ul class="list-group list-group-flush">
-          <li>rule</li>
-          <li>rule</li>
-          <li>roll</li>
-          <li>dice</li>
+          <p>This is a simple dice game where two players have the chance to roll the dice to try and achieve a score of 100.</p>
+<p>The rules of the game are:</p>
+<ul>
+    <li>When the player rolls a 2 - 6, the dice score is added to their turn total and they can continue to play.</li>
+    <li>When a player rolls a 1, their total score reverts to 0 and it becomes the next player's turn.</li>
+    <li>When the player chooses to "hold"(pass their turn), their turn total is added to their total score, and it becomes the next player's turn.</li>
+    <li>The player who first scores 100 or more points wins the game.</li>
         </ul>
       </div>
-      <button id="tugo" class="btn aqua-gradient">Roll The Dice</button>
     </div>
   </div>
-
-  <section id="playingForm">
-       <h3 class="newGame">New Game</h3>
-       <form id="playerNames" class="form-group">
-           <h3>Insert your names to play:</h3>
-           <div class="row">
-               <section class="col-md-6">
-                   <label for="player1">Player1</label>
-                   <input type="text" required id="player1Name" class="form-control">
-               </section>
-               <section class="col-md-6">
-                   <label for="player1">Player2</label>
-                   <input type="text" required id="player2Name" class="form-control">
-               </section>
-           </div>
-           <button type="submit" class="btn" id="playButton">Play</button>
-       </form>
-   </section>
-   <div class="row">
-  <div class="col-sm-8">
-    .col-sm-8
+  <div class="flex-center flex-column">
+    <button id="tugo" class="btn purple-gradient">Roll The Dice</button>
     <div class="row">
-      <div class="col-sm-6">.col-sm-6</div>
-      <div class="col-sm-6">.col-sm-6</div>
+      <div class="col-sm-6 card card-body white border-danger mb3">
+        <p class="card-header border-danger mb3">Player 1</p>
+        <h2>Score</h2>
+        <h2 class="score">0</h2>
+        <div class="init">
+          <h3>Initial Score</h3>
+          <p>_________</p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-sm-4">.col-sm-4</div>
-</div>
-
-
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js">
   </script>

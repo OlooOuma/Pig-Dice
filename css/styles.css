@@ -9,6 +9,11 @@ h1{
 }
 #inst{
   display: none;
+  color: black;
+}
+.row{
+  display: none;
+  color: black;
 }
 /* footer{
     text-align: center;

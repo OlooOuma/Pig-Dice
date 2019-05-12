@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#chike").click(function(){
         $("#inst").slideToggle();
     });
-    $("tugo").click(function(){
-      
+    $("#tugo").click(function(){
+      $(".row").slideToggle();
     })
 });
