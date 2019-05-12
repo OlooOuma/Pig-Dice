@@ -7,6 +7,9 @@ body{
 h1{
     text-align: center;
 }
+#inst{
+  display: none;
+}
 /* footer{
     text-align: center;
     background-color: black;
