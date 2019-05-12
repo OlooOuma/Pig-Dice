@@ -4,6 +4,6 @@ $(document).ready(function(){
         $("#inst").slideToggle();
     });
     $("#tugo").click(function(){
-      $(".row").slideToggle();
+      $("#row").slideToggle();
     })
 });
