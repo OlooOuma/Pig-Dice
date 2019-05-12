@@ -31,25 +31,39 @@
   </div>
   <div class="flex-center flex-column">
     <button id="tugo" class="btn purple-gradient">Roll The Dice</button>
-        <h4 class="player1NameOutput"></h4>
-        <div id="row">
-          <div class="col-md-6 player1">
-              <p>Dice Roll: <span class="diceRoll1"></span></p>
-              <p>Turn Score: <span class="turnScore1"></span></p>
-              <p>Overall Score: <span class="overallScore1"></span></p>
-              <button id="btn" class="roll1 btn">ROLL</button>
-              <button id="btn" class="hold1 btn">HOLD</button>
-              <h4 class="player2NameOutput"></h4>
-          </div>
-          <div class="col-md-6 player2">
-              <p>Dice Roll: <span class="diceRoll2"></span></p>
-              <p>Turn Score: <span class="turnScore2"></span></p>
-              <p>Overall Score: <span class="overallScore2"></span></p>
-              <button class="roll2 btn">ROLL</button>
-              <button class="hold2 btn">HOLD</button>
-          </div>
-        </div>
-
+   <div class=row>
+     <div class="col-md-6 player1">
+       <h2 class="text-center">Player1</h2>
+       <div class="score">
+         <h2 class="text-center">TotalScore</h2>
+         <p class="text-center"><span id="score1"></span></p>
+       </div>
+       <div class="play text-center">
+         <button class="btn btn-primary btn-lg" type="submit" id="roll1">Roll Dice</span>
+           <button type="submit" class="btn" id="hold1">Hold</button>
+           <p>Value: <span id="value1"></span></p>
+       </div>
+       <div class="score">
+         <h2 class="text-center">Round Score</h2>
+         <p class="text-center"><span id="points1"></span></p>
+       </div>
+     </div>
+     <div class="col-md-6 player2">
+       <h2 class="text-center">Player2</h2>
+       <div class="score">
+         <h2 class="text-center">TotalScore</h2>
+         <p class="text-center"><span id="score2"></span></p>
+       </div>
+       <div class="play text-center">
+         <button class="btn btn-primary btn-lg" type="submit" id="roll2">Roll Dice</span>
+           <button type="submit" class="btn" id="hold2">Hold</button>
+           <p>Value: <span id="value2"></span></p>
+       </div>
+       <div class="score">
+         <h2 class="text-center">Round Score</h2>
+         <p class="text-center"><span id="points2"></span></p>
+       </div>
+     </div>
   </div>
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js">

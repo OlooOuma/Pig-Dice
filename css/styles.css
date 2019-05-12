@@ -1,7 +1,7 @@
 body{
     background-image: url("https://tamarinassets.s3.amazonaws.com/assets/1448750440541_565a2d6885c984d70c48e842.jpg");
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 190%;
     color: beige;
 }
 h1{
@@ -12,8 +12,7 @@ h1{
   color: black;
 }
 .row{
-  display: none;
-  color: black;
+
 }
 /* footer{
     text-align: center;
