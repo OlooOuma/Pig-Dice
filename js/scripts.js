@@ -58,14 +58,14 @@ $(document).ready(function() {
   player1.hold();
   $("#score1").text(player1.totalScore);
   $("#points1").empty();
-  $("#value1").empty();
+  $("#poi1").empty();
   player1.winnerCheck();
   });
   $("button#hold2").click(function(){
   player2.hold();
   $("#score2").text(player2.totalScore);
   $("#points2").empty();
-  $("#value2").empty();
+  $("#poi2").empty();
   player2.winnerCheck();
   });
 })
