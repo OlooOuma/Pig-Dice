@@ -13,11 +13,17 @@ roundScore2 = 0;
 finalScore1 = 0;
 finalscore2 = 0;
 
-$("#rol1").click(function(){
+$("#ro1").click(function(){
   var randomNo = Math.floor((Math.random() * 6) + 1);
   if (randomNo === 1){
     roundScore1 = 0;
     $("#diceRoll1").text(randomNo);
     $("#roundScore1").text(roundScore1);
+    finalScore += randomNo;
+    $("#finalScore1").text("#roundScore1");
+  }else{
+    $("#diceRoll1").text(randomNo);
+    roundScore1 += randomNo;
+    $("#roundScore1").text(roundScore1);
   }
-})
+});
