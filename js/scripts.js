@@ -22,7 +22,7 @@ Player.prototype.startGame = function() {
 Player.prototype.roll1 = function() {
   if (this.roll === 1) {
     this.turnScore = 0;
-    alert("Pass the mouse");
+    alert("Next Player");
   } else {
     this.turnScore += this.roll;
   }
@@ -30,7 +30,7 @@ Player.prototype.roll1 = function() {
 Player.prototype.hold = function() {
   this.totalScore += this.turnScore;
   this.turnScore = 0;
-  alert("Pass the mouse");
+  alert("Next Player");
 }
 Player.prototype.winnerCheck = function() {
   if (this.totalScore >= 100) {
