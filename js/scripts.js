@@ -27,3 +27,8 @@ $("#ro1").click(function(){
     $("#roundScore1").text(roundScore1);
   }
 });
+$("#hold1").click(function(){
+  finalScore1 += roundScore1;
+  $("#finalScore1").text(finalScore1);
+  roundScore1 = 0;
+});
