@@ -34,22 +34,22 @@ Player.prototype.hold = function() {
 }
 Player.prototype.winnerCheck = function() {
   if (this.totalScore >= 100) {
-    alert(" You won");
+    alert(" congratulations You won");
   }
 }
 var player1 = new Player();
 var player2 =  new Player();
 
 $(document).ready(function() {
-  $("button#rol1").click(function(){
+  $("#rol1").click(function(){
     player1.roll = rollDice();
-    $("#score1").text(player1.roll);
+    $("#poi1").text(player1.roll);
     player1.roll1();
     $("#points1").text(player1.turnScore);
   });
   $("button#roll2").click(function(){
     player2.roll = rollDice();
-    $("#value2").text(player2.roll);
+    $("#poi2").text(player2.roll);
     player2.roll1();
     $("#points2").text(player2.turnScore);
   });
