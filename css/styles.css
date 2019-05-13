@@ -11,10 +11,6 @@ h1{
   display: none;
   color: black;
 }
-.row{
-
+.player1,.player2{
+  display: none;
 }
-/* footer{
-    text-align: center;
-    background-color: black;
-} */
