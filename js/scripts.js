@@ -43,13 +43,13 @@ var player2 =  new Player();
 $(document).ready(function() {
   $("#rol1").click(function(){
     player1.roll = rollDice();
-    $("#poi1").text(player1.roll);
+    $("#score1").text(player1.roll);
     player1.roll1();
     $("#points1").text(player1.turnScore);
   });
   $("#roll2").click(function(){
     player2.roll = rollDice();
-    $("#poi2").text(player2.roll);
+    $("#score2").text(player2.roll);
     player2.roll1();
     $("#points2").text(player2.turnScore);
   });
