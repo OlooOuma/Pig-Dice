@@ -47,21 +47,21 @@ $(document).ready(function() {
     player1.roll1();
     $("#points1").text(player1.turnScore);
   });
-  $("button#roll2").click(function(){
+  $("#roll2").click(function(){
     player2.roll = rollDice();
     $("#poi2").text(player2.roll);
     player2.roll1();
     $("#points2").text(player2.turnScore);
   });
 
-  $("button#hold1").click(function(){
+  $("#hold1").click(function(){
   player1.hold();
   $("#score1").text(player1.totalScore);
   $("#points1").empty();
   $("#poi1").empty();
   player1.winnerCheck();
   });
-  $("button#hold2").click(function(){
+  $("#hold2").click(function(){
   player2.hold();
   $("#score2").text(player2.totalScore);
   $("#points2").empty();
