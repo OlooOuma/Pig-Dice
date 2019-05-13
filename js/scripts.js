@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $("#chike").click(function(){
         $("#inst").slideToggle();
@@ -32,11 +31,6 @@ Player.prototype.hold = function() {
   this.turnScore = 0;
   alert("Next Player");
 }
-Player.prototype.winnerCheck = function() {
-  if (this.totalScore >= 100) {
-    alert(" congratulations You won");
-  }
-}
 var player1 = new Player();
 var player2 =  new Player();
 
@@ -54,18 +48,18 @@ $(document).ready(function() {
     $("#points2").text(player2.turnScore);
   });
 
-  $("#hold1").click(function(){
-  player1.hold();
-  $("#score1").text(player1.totalScore);
-  $("#points1").empty();
-  $("#poi1").empty();
-  player1.winnerCheck();
-  });
-  $("#hold2").click(function(){
-  player2.hold();
-  $("#score2").text(player2.totalScore);
-  $("#points2").empty();
-  $("#poi2").empty();
-  player2.winnerCheck();
-  });
-})
+  // $("#hold1").click(function(){
+  // player1.hold();
+  // $("#score1").text(player1.totalScore);
+  // $("#points1").empty();
+  // $("#poi1").empty();
+  // player1.winnerCheck();
+  // });
+  // $("#hold2").click(function(){
+  // player2.hold();
+  // $("#score2").text(player2.totalScore);
+  // $("#points2").empty();
+  // $("#poi2").empty();
+  // player2.winnerCheck();
+  // });
+});
